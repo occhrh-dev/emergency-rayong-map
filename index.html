@@ -333,7 +333,7 @@ markers.push(marker);
 
   map.data.addListener("addfeature", function(event) {
     const feature = event.feature;
-    const name = feature.getProperty("TAMBON_TH");
+    const name = feature.getProperty("T_NAME_T");
     if (name) {
       communityFeatures[name] = feature;
 
@@ -551,7 +551,3 @@ function makeDraggableGroupText(el) {
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuVjbyua3vpKU_05o6KSc3zUh7iMYVo4c&callback=initMap">
     </script>
   </
-
-
-
-
